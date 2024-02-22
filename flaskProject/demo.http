@@ -1,0 +1,24 @@
+POST http://127.0.0.1:5000/books
+Content-Type: application/json
+
+{
+    "author": "刘慈欣2",
+    "book_name": "三体2",
+    "book_number": "003",
+    "book_price": 99.8,
+    "book_publisher": "重庆出版社2",
+    "book_type": "科幻2"
+  }
+
+###
+GET http://127.0.0.1:5000/books/5
+Accept: application/json
+
+###
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "user_name": "miu",
+  "user_password": "miu"
+}
