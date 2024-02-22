@@ -3,7 +3,7 @@ from flask import request
 from flask.views import MethodView
 
 
-class FileUploadApi(MethodView):
+class FileApi(MethodView):
     def post(self):
         # 检查是否有文件上传
         if 'file' not in request.files:
@@ -44,4 +44,4 @@ class FileUploadApi(MethodView):
         }
 
 
-fileUpload_view = FileUploadApi.as_view('fileUpload_api')
+file_view = FileApi.as_view('file_api')
