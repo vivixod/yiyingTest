@@ -1,7 +1,7 @@
 from .book import book_view
-from .register import register_view
-from .login import login_view
-from .file import file_view
+from app.views.users.register import register_view
+from app.views.users.login import login_view
+from app.views.file_upload.file import file_view
 from flask import Blueprint
 
 bp = Blueprint('api', __name__)
