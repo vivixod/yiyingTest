@@ -2,6 +2,7 @@ from .book import book_view
 from app.views.users.register import register_view
 from app.views.users.login import login_view
 from app.views.file_upload.file import file_view
+from app.views.classification.test import test_view
 from flask import Blueprint
 
 bp = Blueprint('api', __name__)
@@ -12,3 +13,4 @@ bp.add_url_rule('/register', view_func=register_view, methods=['POST'])
 bp.add_url_rule('/login', view_func=login_view, methods=['POST'])
 bp.add_url_rule('/books/<int:book_id>', view_func=book_view, methods=['GET', 'PUT', 'DELETE'])
 bp.add_url_rule('/file', view_func=file_view, methods=['POST'])
+bp.add_url_rule('/test', view_func=test_view, methods=['POST'])
