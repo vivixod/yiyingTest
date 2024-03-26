@@ -41,7 +41,6 @@ export default {
         rules: {
           user_name: [
             { required: true, message: 'Please enter your username', trigger: 'blur' },
-            {}
           ],
           user_password: [
             { required: true, message: 'Please enter your password', trigger: 'blur' }
